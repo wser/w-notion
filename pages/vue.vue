@@ -1,4 +1,3 @@
-  
 <template>
   <NotionRenderer :blockMap="blockMap" fullPage />
 </template>
@@ -6,9 +5,9 @@
 <script>
 export default {
   data: () => ({ blockMap: null }),
-  async asyncData({ $notion }) {
+  async asyncData({ $notion, $config: { PAGE_BLOCK } }) {
     // get Notion blocks from the API via a Notion pageId
-    const blockMap = await $notion.getPageBlocks("8c1ab01960b049f6a282dda64a94afc7");
+    const blockMap = await $notion.getPageBlocks(`${PAGE_BLOCK}`);
     return { blockMap }
   },
 };

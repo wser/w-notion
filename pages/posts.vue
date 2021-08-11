@@ -1,4 +1,3 @@
-  
 <template>
   <div class="container">
     <div>
@@ -37,8 +36,9 @@
 
 <script>
 export default {
-  async asyncData({ $notion, params, error }) {
-    const pageTable = await $notion.getPageTable("10327f9074b7433aad577ccd0020e971");
+  
+  async asyncData({ $notion, params, error, $config: { TABLE_POSTS } }) {
+    const pageTable = await $notion.getPageTable(`${TABLE_POSTS}`);
     // sort published pages
     const posts = pageTable
       .filter((page) => page.published)

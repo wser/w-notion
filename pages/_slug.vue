@@ -1,4 +1,3 @@
-  
 <template>
   <NotionRenderer
     :blockMap="blockMap"
@@ -17,8 +16,8 @@ export default {
       pageLinkOptions: { component: "NuxtLink", href: "to" },
     };
   },
-  async asyncData({ $notion, params, error }) {
-    const pageTable = await $notion.getPageTable("10327f9074b7433aad577ccd0020e971");
+  async asyncData({ $notion, params, error, $config: { TABLE_POSTS } }) {
+    const pageTable = await $notion.getPageTable(`${TABLE_POSTS}`);
     const page = pageTable.find(
       (item) => item.published && item.slug === params.slug
     );
