@@ -1,7 +1,7 @@
 export default {
   publicRuntimeConfig: {
-    TABLE_POSTS: process.env.TABLE_POSTS,
-    PAGE_BLOCK: process.env.PAGE_BLOCK,
+    TABLE_POSTS: process.env.TABLE_POSTS || '10327f9074b7433aad577ccd0020e971',
+    PAGE_BLOCK: process.env.PAGE_BLOCK || '8c1ab01960b049f6a282dda64a94afc7',
   },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',

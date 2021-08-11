@@ -3,7 +3,7 @@
   <div class="container">
     <div class="content">
       
-      <h1>An unofficial Notion renderer</h1>
+      <h1>vue-notion -> An unofficial Notion renderer</h1>
 
       <h3 class="nav">
 
