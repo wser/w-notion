@@ -29,17 +29,6 @@
           </NuxtLink>
         </div>
       </div>
-
-      <h2>Example Notion Playground Pages</h2>
-      <div class="links">
-        <NuxtLink class="button--grey" to="/2e22de6b770e4166be301490f6ffd420">
-          react-notion tester
-        </NuxtLink>
-        <NuxtLink class="button--grey" to="/067dd719a912471ea9a3ac10710e7fdf">
-          react-notion-x tester
-        </NuxtLink>
-      </div>
-      
     </div>
   </div>
 
